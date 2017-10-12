@@ -1,13 +1,13 @@
 $ (document).ready(function () {
-  $("button#meow").click(function (){
-    $("ul#cat").prepend("<li>MEEEEOOOOOOOW!</li>");
-    $("ul#cat").children("li").first().click(function() {
+  $("button#cat").click(function (){
+    $("ul#catphoto").prepend("<li><img width=250px src=img/cat.jpeg></li>");
+    $("ul#catphoto").children("li").first().click(function() {
       $(this).remove();
       });
     });
-  $("button#bark").click(function (){
-    $("#dog").prepend("<li>Arf-Arf-Arf-Arf-Arf-Arf-Arf!</li>");
-    $("ul#dog").children("li").first().click(function() {
+  $("button#dog").click(function (){
+    $("#dogphoto").prepend("<li><img width=250px src=img/dog.jpeg></li>");
+    $("ul#dogphoto").children("li").first().click(function() {
       $(this).remove();
       });
   });
